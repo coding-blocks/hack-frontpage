@@ -484,73 +484,19 @@
         </div>
       </div>
 
-      <div class="bg-grey all-center landing-page__section">
-        <div class="t-align-c landing-page__section__review-card">
-          <div class="extra-bold mb-5 font-36">
-            What developers say about HackerBlocks
-          </div>
-          <macro-carousel pagination>
-            <div>
-              <div class="bg-white p-5">
-                <img
-                  src="https://codingblocks.com/assets/images/reviews/pic2.jpg"
-                  class="round s-100x100"
-                />
-                <div class="font-mds my-4 light">
-                  The coding problems are divided into categories, which makes
-                  it very easy to prepare for any job interview. Moreover, they
-                  are extensive and cover almost all the general/most important
-                  questions asked by companies. Programming problems are
-                  maintained and extremely up to date.
-                </div>
-                <h2>Naman Kumar</h2>
-              </div>
-            </div>
-            <div>
-              <div class="bg-white p-5">
-                <img
-                  src="https://minio.codingblocks.com/hackerblocks-images/darsh_testimonial.jpeg"
-                  class="round s-100x100"
-                />
-                <div class="font-mds my-3 light">
-                  So many topics were covered in-depth, that the knowledge and
-                  skill I gained helped me clear my interviews. My crystal clear
-                  concepts, as well as familiarity with data structures enabled
-                  me to clear all three rounds in the very first campus
-                  interview I appeared for.
-                  <!-- They guided me in all possible ways.  -->
-                </div>
-                <h2>Darsh Singh</h2>
-              </div>
-            </div>
-            <div>
-              <div class="bg-white p-5">
-                <img
-                  src="https://minio.codingblocks.com/hackerblocks-images/anirudh_testimonial.jpeg"
-                  class="round s-100x100"
-                />
-                <div class="font-mds my-4 light">
-                  Coding Blocks has played a major role both in my career
-                  development and strengthening my programming basics. Guidance
-                  provided by Coding Blocks mentors made really made a great
-                  impact and helped me gained skills that were beneficial in an
-                  interview process. I was able to make quite significant apps,
-                  and now I find myself contributing to open source quite
-                  frequently.
-                </div>
-                <h2>Anirudh Gupta</h2>
-              </div>
-            </div>
-          </macro-carousel>
-        </div>
-      </div>
+      <ReviewCarousel />
     </div>
   </div>
 </template>
 
 <script>
+import ReviewCarousel from '~/components/ReviewCarousel'
+
 export default {
-  name: "LandingPage"
+  name: "LandingPage",
+  components: {
+    ReviewCarousel
+  }
 };
 </script>
 

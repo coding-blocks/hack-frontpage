@@ -4,6 +4,7 @@ module.exports = {
     append_env_to_name: true,
     script: 'yarn',
     args: 'start',
+    interpreter: '/bin/bash',
 
     // Options reference: https://pm2.io/doc/en/runtime/reference/ecosystem-file/
     autorestart: true,

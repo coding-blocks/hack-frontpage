@@ -2,7 +2,8 @@ module.exports = {
   apps : [{
     name: 'hack-frontpage',
     append_env_to_name: true,
-    script: 'yarn start',
+    script: 'yarn',
+    args: 'start',
 
     // Options reference: https://pm2.io/doc/en/runtime/reference/ecosystem-file/
     autorestart: true,

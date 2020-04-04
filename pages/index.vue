@@ -1,15 +1,12 @@
 <template>
-
-<LandingPage/>
-
-
+  <LandingPage />
 </template>
 
 <script>
-import LandingPage from "../components/LandingPage";
+import LandingPage from "../components/Index/LandingPage";
 export default {
-    components: {
-        LandingPage
-    }
-}
+  components: {
+    LandingPage,
+  },
+};
 </script>

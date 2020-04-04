@@ -490,7 +490,7 @@
 </template>
 
 <script>
-import ReviewCarousel from '~/components/ReviewCarousel'
+import ReviewCarousel from '~/components/Index/ReviewCarousel'
 
 export default {
   name: "LandingPage",

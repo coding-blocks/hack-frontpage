@@ -14,7 +14,11 @@ export default {
         content: process.env.npm_package_description || ''
       }
     ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
+    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
+    script: [
+      { src: 'https://unpkg.com/@coding-blocks/web-components@0.0.8/dist/index.js' },
+      { src: 'https://code.jivosite.com/widget.js', 'data-jv-id': 'ASYGLZQ6UC' }
+    ]
   },
   /*
    ** Customize the progress-bar color
@@ -23,11 +27,15 @@ export default {
   /*
    ** Global CSS
    */
-  css: [],
+  css: [
+    { src: '@coding-blocks/motley/dist/hb/app.min.css' }
+  ],
   /*
    ** Plugins to load before mounting the App
    */
-  plugins: [],
+  plugins: [
+    { src: './plugins/vue-carousel.js', mode: 'client' }
+  ],
   /*
    ** Nuxt.js dev-modules
    */

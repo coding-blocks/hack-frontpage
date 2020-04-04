@@ -3,7 +3,7 @@
     <promotion-banner />
     <Navbar />
     <nuxt />
-    <Footer/>
+    <Footer />
   </div>
 </template>
 <script>

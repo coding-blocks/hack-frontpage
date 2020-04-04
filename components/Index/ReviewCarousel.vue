@@ -6,11 +6,15 @@
       </div>
       <client-only>
         <carousel v-bind="carouselOptions">
-          <slide class="bg-white p-5" v-for="review in reviews" :key="review.name">
+          <slide
+            v-for="review in reviews"
+            :key="review.name"
+            class="bg-white p-5"
+          >
             <img
               :src="review.img"
               class="round s-100x100"
-            />
+            >
             <div class="font-mds my-4 light">
               {{ review.review }}
             </div>

@@ -2,7 +2,7 @@ module.exports = {
   apps : [{
     name: 'hack-frontpage',
     append_env_to_name: true,
-    script: './.nuxt/server.js',
+    script: 'yarn start',
 
     // Options reference: https://pm2.io/doc/en/runtime/reference/ecosystem-file/
     instances: 4,

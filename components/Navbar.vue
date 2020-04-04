@@ -47,7 +47,7 @@
         </div>
         <a
           class="button-solid button-orange dsp-none-sm white"
-          href=""
+          href="/app/"
         >Get Started</a>
       </div>
     </div>

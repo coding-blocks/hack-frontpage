@@ -14,7 +14,7 @@
           </h2>
         </div>
         <img
-          src="../images/maingif.gif"
+          src="../../images/maingif.gif"
           alt="Vector"
           class="landing-page__vector-img1 h-100 d-md-block d-none"
         >
@@ -41,7 +41,7 @@
         class="row no-gutters align-items-center white bg-gradient-pink position-relative justify-content-between landing-page__section"
       >
         <img
-          src="../images/bg_redpink.png"
+          src="../../images/bg_redpink.png"
           class="back-img tl"
         >
         <div class="col-md-5 col-12">
@@ -71,7 +71,7 @@
           <div class="row mb-5">
             <div class="col-6">
               <img
-                src="../images/icon1.png"
+                src="../../images/icon1.png"
                 alt="Icon"
                 class="w-20 mb-md-5 mb-1"
               >
@@ -84,7 +84,7 @@
             </div>
             <div class="col-6">
               <img
-                src="../images/icon2.png"
+                src="../../images/icon2.png"
                 alt="Icon"
                 class="w-20 mb-md-5 mb-1"
               >
@@ -99,7 +99,7 @@
           <div class="row">
             <div class="col-6">
               <img
-                src="../images/icon3.png"
+                src="../../images/icon3.png"
                 alt="Icon"
                 class="w-20 mb-md-5 mb-1"
               >
@@ -112,7 +112,7 @@
             </div>
             <div class="col-6">
               <img
-                src="../images/icon4.png"
+                src="../../images/icon4.png"
                 alt="Icon"
                 class="w-20 mb-md-5 mb-1"
               >
@@ -141,7 +141,7 @@
           <div class="col-md-4 col-6 mb-4">
             <div class="border-card p-lg-5 p-4 h-100">
               <img
-                src="../images/contests.svg"
+                src="../../images/contests.svg"
                 alt="contests"
                 class="w-40 mb-3"
               >
@@ -159,7 +159,7 @@
           <div class="col-md-4 col-6 mb-4">
             <div class="border-card p-lg-5 p-4 h-100">
               <img
-                src="../images/interview.svg"
+                src="../../images/interview.svg"
                 alt="contests"
                 class="w-40 mb-3"
               >
@@ -176,7 +176,7 @@
           <div class="col-md-4 col-6 mb-4">
             <div class="border-card p-lg-5 p-4 h-100">
               <img
-                src="../images/dcb.svg"
+                src="../../images/dcb.svg"
                 alt="contests"
                 class="w-40 mb-3"
               >
@@ -193,7 +193,7 @@
           <div class="col-md-4 col-6 mb-4">
             <div class="border-card p-lg-5 p-4 h-100">
               <img
-                src="../images/profile.svg"
+                src="../../images/profile.svg"
                 alt="contests"
                 class="w-40 mb-3"
               >
@@ -210,7 +210,7 @@
           <div class="col-md-4 col-6 mb-4">
             <div class="border-card p-lg-5 p-4 h-100">
               <img
-                src="../images/competition.svg"
+                src="../../images/competition.svg"
                 alt="contests"
                 class="w-40 mb-3"
               >
@@ -227,7 +227,7 @@
           <div class="col-md-4 col-6 mb-4">
             <div class="border-card p-lg-5 p-4 h-100">
               <img
-                src="../images/certificate.svg"
+                src="../../images/certificate.svg"
                 alt="contests"
                 class="w-40 mb-3"
               >
@@ -259,7 +259,7 @@
               >
                 <div class="col-md-3 col-2">
                   <img
-                    src="../images/journey.png"
+                    src="../../images/journey.png"
                     alt="journey"
                     class="w-80"
                   >
@@ -341,7 +341,7 @@
               <div class="row no-gutters align-items-center">
                 <div class="col-md-4 col-12">
                   <img
-                    src="../images/profile.svg"
+                    src="../../images/profile.svg"
                     alt="badges"
                     class="landing-page__hb-info__info-img"
                   >
@@ -362,7 +362,7 @@
               <div class="row no-gutters align-items-center">
                 <div class="col-md-4 col-12">
                   <img
-                    src="../images/bookmark.svg"
+                    src="../../images/bookmark.svg"
                     alt="badges"
                     class="landing-page__hb-info__info-img"
                   >
@@ -382,7 +382,7 @@
               <div class="row no-gutters align-items-center">
                 <div class="col-md-4 col-12">
                   <img
-                    src="../images/strategy.svg"
+                    src="../../images/strategy.svg"
                     alt="badges"
                     class="landing-page__hb-info__info-img"
                   >
@@ -405,7 +405,7 @@
               <div class="row no-gutters align-items-center">
                 <div class="col-md-4 col-12">
                   <img
-                    src="../images/dcb2.svg"
+                    src="../../images/dcb2.svg"
                     alt="badges"
                     class="landing-page__hb-info__info-img"
                   >
@@ -426,7 +426,7 @@
               <div class="row no-gutters align-items-center">
                 <div class="col-md-4 col-12">
                   <img
-                    src="../images/profile.svg"
+                    src="../../images/profile.svg"
                     alt="badges"
                     class="landing-page__hb-info__info-img"
                   >
@@ -447,7 +447,7 @@
               <div class="row no-gutters align-items-center">
                 <div class="col-md-4 col-12">
                   <img
-                    src="../images/certificate2.svg"
+                    src="../../images/certificate2.svg"
                     alt="badges"
                     class="landing-page__hb-info__info-img"
                   >
@@ -479,7 +479,7 @@
           </h2>
         </div>
         <img
-          src="../images/companies.png"
+          src="../../images/companies.png"
           alt="companies"
           class="mt-md-5 mt-4 w-100"
         >
@@ -496,7 +496,7 @@
         <div class="row no-gutters mt-5">
           <div class="col-5 d-lg-block d-none">
             <img
-              src="../images/beginner.gif"
+              src="../../images/beginner.gif"
               alt="beginner"
               class="landing-page__vector-img2"
             >
@@ -505,7 +505,7 @@
             <div class="row align-items-center no-gutters mb-5">
               <div class="col-2 pr-md-5 pr-4">
                 <img
-                  src="../images/dcb-beg.svg"
+                  src="../../images/dcb-beg.svg"
                   alt="certificate"
                 >
               </div>
@@ -524,7 +524,7 @@
             <div class="row align-items-center no-gutters mb-5">
               <div class="col-2 pr-md-5 pr-4">
                 <img
-                  src="../images/interview-beg.svg"
+                  src="../../images/interview-beg.svg"
                   alt="interview"
                 >
               </div>
@@ -543,7 +543,7 @@
             <div class="row align-items-center no-gutters mb-5">
               <div class="col-2 pr-md-5 pr-4">
                 <img
-                  src="../images/competition_beg.svg"
+                  src="../../images/competition_beg.svg"
                   alt="competition"
                 >
               </div>

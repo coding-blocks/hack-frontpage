@@ -27,19 +27,19 @@
             <div class="col-xl-10 col-9 dsp-none-md">
               <div class="d-flex align-items-center h-100">
                 <div class="font-sm light px-3">
-                  <a href=""> Dashboard </a>
+                  <a href="/app/"> Dashboard </a>
                 </div>
                 <div class="font-sm light px-3">
-                  <a href=""> Daily Code Bytes</a>
+                  <a href="/app/dcb"> Daily Code Bytes</a>
                 </div>
                 <div class="font-sm light px-3">
-                  <a href="">Practice Problems</a>
+                  <a href="/app/practice">Practice Problems</a>
                 </div>
                 <div class="font-sm light px-3">
-                  <a href="">Contests</a>
+                  <a href="/app/contests">Contests</a>
                 </div>
                 <div class="font-sm light px-3">
-                  <a href="">Competitions</a>
+                  <a href="/app/competitions">Competitions</a>
                 </div>
               </div>
             </div>

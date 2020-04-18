@@ -8,9 +8,9 @@ export default {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { name: 'og:title', content='Hackerblocks' },
-      { name: 'og:description', content='Home to 30K+ Talented Developers. Practice coding, prepare for interviews, and get prizes.' },
-      { name: 'og:image', content='https://codingblocks.com/assets/images/cb/cb_tshirt_logo.png' }
+      { name: 'og:title', content: 'Hackerblocks' },
+      { name: 'og:description', content: 'Home to 30K+ Talented Developers. Practice coding, prepare for interviews, and get prizes.' },
+      { name: 'og:image', content: 'https://codingblocks.com/assets/images/cb/cb_tshirt_logo.png' }
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
     script: [

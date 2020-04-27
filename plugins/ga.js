@@ -9,7 +9,6 @@ export default ({ app }) => {
   /*
   ** Include Google Analytics Script
   */
-  debugger
   var s = document.createElement( 'script' );
   s.setAttribute('src', 'https://www.googletagmanager.com/gtag/js?id=UA-83327907-12');
   document.body.appendChild( s );

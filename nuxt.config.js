@@ -1,3 +1,5 @@
+import config from './config'
+
 export default {
   mode: 'universal',
   /*
@@ -14,7 +16,7 @@ export default {
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
     script: [
-      { src: 'https://unpkg.com/@coding-blocks/web-components@0.0.8/dist/index.js' },
+      { src: 'https://unpkg.com/@coding-blocks/web-components@0.0.12/dist/index.js' },
       { src: 'https://code.jivosite.com/widget.js', 'data-jv-id': 'ASYGLZQ6UC' }
     ]
   },
@@ -33,7 +35,8 @@ export default {
    */
   plugins: [
     { src: './plugins/vue-carousel.js', mode: 'client' },
-    { src: './plugins/ga.js', mode: 'client' }
+    { src: './plugins/ga.js', mode: 'client' },
+    { src: './plugins/axios.js' }
   ],
   /*
    ** Nuxt.js dev-modules
@@ -48,11 +51,19 @@ export default {
   modules: [
     // Doc: https://axios.nuxtjs.org/usage
     '@nuxtjs/axios',
-    '@nuxtjs/pwa'
+    '@nuxtjs/pwa',
+    'cookie-universal-nuxt'
   ],
   /*
    ** Axios module configuration
    ** See https://axios.nuxtjs.org/options
    */
-  axios: {}
+  axios: config.axios,
+  /*
+  ** Middlewares
+  **
+  */
+  router: {
+    middleware: ['auth', 'redirectLoggedInHome']
+  },
 }

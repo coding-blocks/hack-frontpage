@@ -55,12 +55,44 @@
     <cb-mobile-navbar
       id="navbar"
       logo="/_nuxt/images/hb_logo.png"
-    />
+    >
+      <div 
+        v-if="currentUser" 
+        class="d-flex align-items-center my-4 pl-4"
+      >
+        <div class="img-ring s-50x50">
+          <img 
+            :src="currentUser.photo" 
+            class="round img" 
+            alt="ProfilePic"
+          >
+        </div>
+
+        <div class="pl-4">
+          <div class="extra-bold gradient-text font-mds">
+            {{ currentUser.name }}
+          </div>
+          <a 
+            :href="`/app/users/${currentUser.id}`" 
+            class="bold orange"
+          >
+            View Profile
+          </a>
+        </div>
+      </div>
+    </cb-mobile-navbar>
   </div>
 </template>
 <script>
+import { mapGetters } from 'vuex';
+
 export default {
   name: "Navbar",
+  computed: {
+    ...mapGetters({
+      currentUser: 'session/currentUser'
+    })
+  },
   methods: {
     openNavbar() {
       const navbar = document.getElementById("navbar")

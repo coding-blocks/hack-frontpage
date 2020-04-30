@@ -54,7 +54,7 @@
     <cb-navbar topalign="right" />
     <cb-mobile-navbar
       id="navbar"
-      logo="/_nuxt/images/hb_logo.png"
+      logo="https://minio.codingblocks.com/public/hb_logo.png"
     >
       <div 
         v-if="currentUser" 

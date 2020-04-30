@@ -41,9 +41,9 @@
           </div>
         </div>
         <div>
-          <button class="button-solid button-orange font-sm extra-bold my-3">
+          <a :href="`/app/contests/${contest.id}`" class="button-solid button-orange font-sm extra-bold my-3">
             Start Challenge
-          </button>
+          </a>
         </div>
       </div>
     </div>

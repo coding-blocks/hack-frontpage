@@ -15,6 +15,7 @@ if (ENV === 'development') {
   config.axios = {
     host: "hack-api.codingblocks.com",
     https: true,
+    port: 443,
     prefix: "/api/v2"
   }
   config.publicUrl = "http://hack.codingblocks.com"

@@ -1,10 +1,10 @@
 <template>
   <div class="container">
-    <img 
+    <!-- <img 
       :src="contest.image" 
       alt="Cover Photo"
       class="w-100"
-    >
+    > -->
     <div class="border-card p-5 bg-black white br-none">
       <div class="row align-items-center justify-content-between">
         <div class="row no-gutters col-md-8 col-12 align-items-center">
@@ -42,7 +42,7 @@
         </div>
         <div>
           <a :href="`/app/contests/${contest.id}`" class="button-solid button-orange font-sm extra-bold my-3">
-            Start Challenge
+            Register
           </a>
         </div>
       </div>
@@ -51,14 +51,18 @@
       <div class="bold">
         Instructions
       </div>
-      <p>{{ contest.description }}</p>
+      <VueMarkdown>{{ contest.description }}</VueMarkdown>
     </div>
   </div>
 </template>
 <script>
-import moment from 'moment';
+import moment from 'moment'
+import VueMarkdown from 'vue-markdown'
 
 export default {
+  components: {
+    VueMarkdown
+  },
   async asyncData({ params, $axios, app, redirect }) {
     const res = await $axios.get(`/contests/${params.id}/details`)
     const contest = app.$jsonApiStore.sync(res.data)

@@ -1,4 +1,5 @@
 import config from './config'
+import path from 'path';
 
 export default {
   mode: 'universal',
@@ -16,7 +17,7 @@ export default {
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
     script: [
-      { src: 'https://unpkg.com/@coding-blocks/web-components@0.0.12/dist/index.js' },
+      { src: 'https://unpkg.com/@coding-blocks/web-components@0.1.1/dist/index.js' },
       { src: 'https://code.jivosite.com/widget.js', 'data-jv-id': 'ASYGLZQ6UC' }
     ]
   },

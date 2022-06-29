@@ -29,7 +29,8 @@ export default {
    ** Global CSS
    */
   css: [
-    { src: '@coding-blocks/motley/dist/hb/app.min.css' }
+    { src: '@coding-blocks/motley/dist/hb/app.min.css' },
+    { src: '~/assets/css/app.css'}
   ],
   /*
    ** Plugins to load before mounting the App

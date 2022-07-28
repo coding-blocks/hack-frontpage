@@ -277,12 +277,6 @@
                   class="white"
                 >Blog</a>
               </div>
-              <div class="my-3">
-                <a
-                  href="https://cb.lk"
-                  class="white"
-                >URL Shortener</a>
-              </div>
             </div>
           </div>
           <div class="col-lg-2 col-md-3 col-6 mt-md-0 mt-5">

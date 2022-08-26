@@ -33,9 +33,12 @@ export default {
       class: 'pt-0'
     }
   },
-  created() {
-    if(process.client && localStorage.getItem('loginPrompt') === 'true') {
-      this.showModal = true
+  mounted() {
+    if(process.client) {
+      const loginPrompt = localStorage.getItem('loginPrompt')
+      if(loginPrompt === 'true') {
+        this.showModal = true
+      }
     }
   },
   methods: {

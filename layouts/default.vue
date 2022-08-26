@@ -1,22 +1,42 @@
 <template>
   <div class="a-hb">
     <promotion-banner />
-    <Navbar />
+    <Modal v-if="showModal" @close="showModal = false">
+      <div slot="body">
+        <LoginDialog />
+      </div>
+    </Modal>
+    <Navbar @toggleShowLoginModal="toggleShowModal"/>
     <nuxt />
     <Footer />
   </div>
 </template>
 <script>
-  import Navbar from "../components/Navbar";
-  import Footer from "../components/Footer";
-  export default {
-    components: {
-      Navbar, Footer
-    },
-    head: {
-      bodyAttrs: {
-        class: 'pt-0'
-      }
+import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
+import Modal from '~/components/Base/Modal.vue'
+import LoginDialog from '~/components/Base/LoginDialog.vue'
+export default {
+  data() {
+    return {
+      showModal: false
+    }
+  },
+  components: {
+    Navbar,
+    Footer,
+    Modal,
+    LoginDialog
+  },
+  head: {
+    bodyAttrs: {
+      class: 'pt-0'
+    }
+  },
+  methods: {
+    toggleShowModal() {
+      this.showModal = !this.showModal
     }
   }
+}
 </script>

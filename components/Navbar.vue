@@ -23,7 +23,7 @@
         </ul>
       </nav><!-- .nav-menu -->
 
-      <a href="/app/" class="button-solid-orange scrollto">Login / Signup</a>
+      <button class="button-solid-orange" @click="toggleLoginDialog">Login / Signup</button>
       <button class="navbar-toggler" type="button">        
         <span class="bar"></span> 
       </button>
@@ -77,6 +77,9 @@ export default {
     openNavbar() {
       const navbar = document.getElementById("navbar")
       navbar.showhamburger = true
+    },
+    toggleLoginDialog() {
+      this.$emit('toggleShowLoginModal')
     }
   }
 }

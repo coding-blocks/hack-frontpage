@@ -2,8 +2,8 @@ import config from '~/config'
 
 export default async function ({ store, app: { $cookies }, $axios }) {
   const isAuthenticated = !!store.state.session.user
-  const session = $cookies.get(config.COOKIE_NAME)
-  const jwt = session?.authenticated?.jwt
+  const token = $cookies.get(config.COOKIE_NAME)
+  const jwt = token
 
   if (isAuthenticated || !jwt) {
     return;

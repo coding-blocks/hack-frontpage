@@ -1,7 +1,7 @@
 <template>
   <div class="a-hb">
     <promotion-banner />
-    <Modal v-if="showModal" @close="showModal = false">
+    <Modal v-if="showModal" @close="toggleShowModal">
       <div slot="body">
         <LoginDialog />
       </div>
@@ -33,9 +33,17 @@ export default {
       class: 'pt-0'
     }
   },
+  created() {
+    if(process.client && localStorage.getItem('loginPrompt') === 'true') {
+      this.showModal = true
+    }
+  },
   methods: {
     toggleShowModal() {
       this.showModal = !this.showModal
+      if(process.client && !this.showModal) {
+        localStorage.setItem('loginPrompt', false)
+      }
     }
   }
 }

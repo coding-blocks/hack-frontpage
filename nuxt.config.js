@@ -39,6 +39,7 @@ export default {
     { src: './plugins/vue-carousel.js', mode: 'client' },
     { src: './plugins/ga.js', mode: 'client' },
     { src: './plugins/axios.js' },
+    { src: './plugins/vuency.js' },
     { src: './plugins/jsonapi-datastore.js' }
   ],
   /*

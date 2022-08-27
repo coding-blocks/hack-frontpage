@@ -36,10 +36,12 @@ export default {
   mounted() {
     if(process.client) {
       const redirectionPath = localStorage.getItem('redirectionPath')
-      if(redirectionPath) {
+
+      if(!!this.$store.state.session.user && redirectionPath) {
         localStorage.removeItem('redirectionPath')
         window.location.href = redirectionPath
       }
+      
       const loginPrompt = localStorage.getItem('loginPrompt')
       if(loginPrompt === 'true') {
         this.showModal = true

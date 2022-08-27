@@ -33,19 +33,11 @@ export default {
       class: 'pt-0'
     }
   },
-  fetch({redirect}) {
-    console.log('inside')
-    if(process.client) {
-      const redirectionPath = localStorage.getItem('redirectionPath')
-      if(redirectionPath) {
-        return redirect(redirectionPath)
-      }
-    }
-  },
   mounted() {
     if(process.client) {
       const redirectionPath = localStorage.getItem('redirectionPath')
       if(redirectionPath) {
+        localStorage.removeItem('redirectionPath')
         window.location.href = redirectionPath
       }
       const loginPrompt = localStorage.getItem('loginPrompt')

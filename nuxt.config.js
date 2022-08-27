@@ -67,6 +67,6 @@ export default {
   **
   */
   router: {
-    middleware: ['auth', 'redirectLoggedInHome']
+    middleware: ['auth']
   },
 }

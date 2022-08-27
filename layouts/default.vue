@@ -16,6 +16,7 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import Modal from '~/components/Base/Modal.vue'
 import LoginDialog from '~/components/Base/LoginDialog.vue'
+import config from '~/config.js';
 export default {
   data() {
     return {
@@ -37,11 +38,15 @@ export default {
     if(process.client) {
       const redirectionPath = localStorage.getItem('redirectionPath')
 
-      if(!!this.$store.state.session.user && redirectionPath) {
-        localStorage.removeItem('redirectionPath')
-        window.location.href = redirectionPath
+      if(!!this.$store.state.session.user) {
+        if(redirectionPath) {
+          localStorage.removeItem('redirectionPath')
+          window.location.href = redirectionPath
+        } else {
+          window.location = config.publicUrl + '/app/'
+        }
       }
-      
+
       const loginPrompt = localStorage.getItem('loginPrompt')
       if(loginPrompt === 'true') {
         this.showModal = true

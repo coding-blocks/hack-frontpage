@@ -38,7 +38,7 @@ export default {
     if(process.client) {
       const redirectionPath = localStorage.getItem('redirectionPath')
 
-      if(!!this.$store.state.session.user) {
+      if(this.$store.state.session.user) {
         if(redirectionPath) {
           localStorage.removeItem('redirectionPath')
           window.location.href = redirectionPath

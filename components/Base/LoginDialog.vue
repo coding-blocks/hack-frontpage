@@ -68,7 +68,7 @@ export default {
           }, {
             withCredentials: true
           }
-        )
+        ).then(() => window.location.reload())
         .catch(({response}) => this.error = response.data)
       })
     }

@@ -65,8 +65,11 @@ export default {
             email: this.email,
             otp_id: this.otp_id,
             otp: this.otp
+          }, {
+            withCredentials: true
           }
-        ).catch(({response}) => this.error = response.data)
+        )
+        .catch(({response}) => this.error = response.data)
       })
     }
   },

@@ -34,7 +34,7 @@ export default {
       class: 'pt-0'
     }
   },
-  created() {
+  mounted() {
     if(process.client) {
       const redirectionPath = localStorage.getItem('redirectionPath')
 

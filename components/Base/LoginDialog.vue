@@ -9,12 +9,12 @@
     </div>
     <div class="my-5">OR</div>
 
-    <div class="flex justify-content-center w-100" v-if="this.otp_id">
+    <div class="d-flex justify-content-center w-100" v-if="this.otp_id">
       <input class="input-text col-8" v-model="otp" placeholder="OTP" type="text" />
       <button class="button-solid button-orange" @click="verifyEmailOtpTask.run()"
         :disabled="verifyEmailOtpTask.isActive">Verify OTP</button>
     </div>
-    <div class="flex justify-content-center w-100" v-else>
+    <div class="d-flex justify-content-center w-100" v-else>
       <input class="input-text col-8" v-model="email" placeholder="Email" type="email" />
       <button class="button-solid button-orange" @click="sendEmailOtpTask.run()"
         :disabled="disableSendOtpButton || sendEmailOtpTask.isActive">Send OTP</button>

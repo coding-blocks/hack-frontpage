@@ -52,7 +52,7 @@ export default {
       sendEmailOtpTask: t(function* () {
         this.error = null
         try {
-          const response = yield this.$axios.post('/jwt/otp', { email: this.email })
+          const response = yield this.$axios.post('/jwt/otp', { email: this.email.toLowerCase() })
           this.otp_id = response.data.id
         } catch(err) {
           console.log(err)

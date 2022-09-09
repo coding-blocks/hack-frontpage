@@ -62,7 +62,7 @@ export default {
         this.error = null
         yield this.$axios.post('/jwt/otp/verify',
           {
-            email: this.email,
+            email: this.email.toLowerCase(),
             otp_id: this.otp_id,
             otp: this.otp
           }, {

@@ -79,7 +79,7 @@ export default {
       navbar.showhamburger = true
     },
     toggleLoginDialog() {
-      this.$emit('toggleShowLoginModal')
+      document.getElementsByTagName('cb-login-signup')[0].classList.remove('hide-cb-login-signup-prompt')
     }
   }
 }

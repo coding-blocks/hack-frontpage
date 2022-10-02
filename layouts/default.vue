@@ -1,11 +1,7 @@
 <template>
   <div class="a-hb">
     <promotion-banner />
-    <Modal v-if="showModal" @close="toggleShowModal">
-      <div slot="body">
-        <LoginDialog />
-      </div>
-    </Modal>
+    <cb-login-signup class="hide-cb-login-signup-prompt" />
     <Navbar @toggleShowLoginModal="toggleShowModal"/>
     <nuxt />
     <Footer />
@@ -14,8 +10,6 @@
 <script>
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
-import Modal from '~/components/Base/Modal.vue'
-import LoginDialog from '~/components/Base/LoginDialog.vue'
 import config from '~/config.js';
 export default {
   data() {
@@ -25,9 +19,7 @@ export default {
   },
   components: {
     Navbar,
-    Footer,
-    Modal,
-    LoginDialog
+    Footer
   },
   head: {
     bodyAttrs: {
@@ -49,7 +41,7 @@ export default {
 
       const loginPrompt = localStorage.getItem('loginPrompt')
       if(loginPrompt === 'true') {
-        this.showModal = true
+        document.getElementsByTagName('cb-login-signup')[0].classList.remove('hide-cb-login-signup-prompt')
       }
     }
   },

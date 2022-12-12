@@ -17,7 +17,7 @@ export default {
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
     script: [
-      { src: 'https://unpkg.com/@coding-blocks/web-components@0.2.4/dist/index.js' },
+      { src: 'https://unpkg.com/@coding-blocks/web-components@0.3.0/dist/index.js' },
       { src: 'https://code.jivosite.com/widget.js', 'data-jv-id': 'ASYGLZQ6UC' }
     ]
   },

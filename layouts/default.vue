@@ -26,11 +26,14 @@ export default {
       class: 'pt-0'
     }
   },
-  mounted() {
+  async mounted() {
     if(process.client) {
       const redirectionPath = localStorage.getItem('redirectionPath')
-
       if(this.$store.state.session.user) {
+        if(this.$route.query?.flow === 'login') {
+          await this.$axios.post('/users/update-session-started-at')
+        }
+
         if(redirectionPath) {
           localStorage.removeItem('redirectionPath')
           window.location.href = redirectionPath

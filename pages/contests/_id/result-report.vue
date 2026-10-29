@@ -47,6 +47,14 @@
           {{ attemptedStudents }}
         </div>
       </div>
+      <div class="stat-card">
+        <div class="stat-label">
+          COMPLETED THE TEST
+        </div>
+        <div class="stat-value">
+          {{ completedTest }}
+        </div>
+      </div>
     </div>
 
     <h2 class="section-title">
@@ -224,6 +232,7 @@ export default {
     contest: {},
     registeredStudents: 0,
     attemptedStudents: 0,
+    completedTest: 0,
     contentPerformance: [],
     leaderboard: [],
     search: '',
